@@ -1,0 +1,16 @@
+//protoc  -I=./  --cpp_out=./cpp_output ./Order.proto
+package xquant;
+option java_package = "com.xquant";
+option java_outer_classname = "Order";
+
+message Order{
+required int32 action = 1;
+required string serialNo = 2;
+required string version = 3;
+optional string operator = 4;
+optional string code = 5;
+optional string name = 6;
+optional string price = 7;
+optional string amount = 8;
+
+}
